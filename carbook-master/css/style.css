@@ -10078,3 +10078,7 @@ textarea.form-control {
     font-weight: 300;
     margin: 2em 0;
   }
+
+  .ftco-footer.ftco-bg-dark{
+    background-color: #1089ff;
+  }
