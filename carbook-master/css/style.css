@@ -10082,3 +10082,14 @@ textarea.form-control {
   .ftco-footer.ftco-bg-dark{
     background-color: #1089ff;
   }
+
+  .custom-margin{
+    margin-top: 40px;
+    overflow: hidden;
+  }
+  .custom-margin img {
+    transition: transform 0.3s ease;
+  }
+  .custom-margin img:hover {
+    transform: scale(1.1);
+  }
