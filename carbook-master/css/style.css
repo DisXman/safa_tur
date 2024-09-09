@@ -10098,12 +10098,11 @@ textarea.form-control {
 @media (max-width: 991.98px) {
   .navbar {
     background-color: white !important; /* İstediğiniz rengi buraya yazabilirsiniz */
-    color: black !important;
   }
-/*   
+  
   .navbar .navbar-toggler {
-    border-color: rgba(0, 0, 0, 0.1); Toggler butonunun görünürlüğü için
-  } */
+    border-color: rgb(0, 0, 0);
+  }
 /* 
   .navbar-collapse {
     background-color: #ffffff !important; Menü açıldığında arka plan rengi
@@ -10120,4 +10119,23 @@ textarea.form-control {
   .col-md-4 {
     width: 100%; /* Tüm genişlikte görünmesini sağlar */
   }
+}
+
+.transferyazi{
+  color: black;
+  margin-top: 5rem;
+}
+.content-container {
+  display: flex;
+  align-items: center; /* Dikey ortalama */
+  min-height: 100vh; /* Sayfanın tamamını kaplayacak şekilde */
+}
+
+.text-section {
+  padding: 20px;
+}
+
+.img-section img {
+  max-width: 100%; /* Fotoğrafın taşıyıcı sütunun genişliğini aşmaması için */
+  border-radius: 10px; /* Hafif köşeleri yuvarlama */
 }
