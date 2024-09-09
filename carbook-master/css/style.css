@@ -10093,3 +10093,31 @@ textarea.form-control {
   .custom-margin img:hover {
     transform: scale(1.1);
   }
+
+/* Mobil cihazlar için özel navbar arka plan rengi */
+@media (max-width: 991.98px) {
+  .navbar {
+    background-color: white !important; /* İstediğiniz rengi buraya yazabilirsiniz */
+    color: black !important;
+  }
+/*   
+  .navbar .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1); Toggler butonunun görünürlüğü için
+  } */
+/* 
+  .navbar-collapse {
+    background-color: #ffffff !important; Menü açıldığında arka plan rengi
+  } */
+}
+
+@media (max-width: 991px) {
+  .instafoto>.container>.row {
+    display: flex;
+    flex-direction: column; /* Sütun yönüne çevirir */
+    align-items: center; /* İçeriği ortalar */
+  }
+  
+  .col-md-4 {
+    width: 100%; /* Tüm genişlikte görünmesini sağlar */
+  }
+}
