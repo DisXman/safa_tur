@@ -10139,3 +10139,109 @@ textarea.form-control {
   max-width: 100%; /* Fotoğrafın taşıyıcı sütunun genişliğini aşmaması için */
   border-radius: 10px; /* Hafif köşeleri yuvarlama */
 }
+
+.fotolar .galeri {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.fotolar .photo {
+  width: 100%;
+  height: 100%;
+  /* background-size: cover; */
+  /* background-position: center; */
+  cursor: pointer;
+}
+/*insta fotoğraflar buradan başlar*/
+/* Modal container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal image */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Close button (X) */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* Hide all other content when modal is open */
+body.modal-open {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Fade-in animation */
+@keyframes zoom {
+  from { transform: scale(0) }
+  to { transform: scale(1) }
+}
+
+.modal-content {
+  animation: zoom 0.8s;
+}
+/*insta fotolar burada biter*/
+
+
+
+
+.image-container {
+  display: flex; /* Resimleri yanyana göstermek için */
+}
+
+.image-container a {
+  margin: 0 5px; /* Resimler arasında boşluk için */
+}
+
+img {
+  width: 300px; /* Resim genişliği (istediğiniz gibi değiştirebilirsiniz) */
+  height: auto; /* Yükseklik orantılı olarak ayarlanır */
+}
+
+
+.abc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.abc li {
+  margin-right: 20px;
+}
+
+.abc img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+

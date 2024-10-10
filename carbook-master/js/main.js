@@ -339,3 +339,32 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+
+
+// Open modal and display the clicked image
+function openModal(element) {
+	var modal = document.getElementById("myModal");
+	var modalImg = document.getElementById("imgModal");
+  
+	// Get the background image directly from the clicked element
+	var bgImage = element.style.backgroundImage.slice(5, -2); // Clean up the URL from 'url("...")'
+	modalImg.src = bgImage;
+  
+	modal.style.display = "block";
+  
+	// Hide navbar and other content (disable scrolling)
+	document.body.classList.add("modal-open");
+  }
+  
+  // Close the modal
+  function closeModal() {
+	var modal = document.getElementById("myModal");
+	modal.style.display = "none";
+  
+	// Restore navbar and other content
+	document.body.classList.remove("modal-open");
+  }
+  
+  
