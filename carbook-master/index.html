@@ -32,7 +32,7 @@
     <link rel="icon" href="images/safaturlogo.png" type="image/x-icon" />
   </head>
   <body>
-    <nav
+    <!-- <nav
       class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
       id="ftco-navbar"
     >
@@ -78,21 +78,43 @@
                 <a class="dropdown-item" href="transference.html">Transfer</a>
               </div>
             </li>
-            <!-- <li class="nav-item"><a href="pricing.html" class="nav-link">Fiyatlarımız</a></li> -->
             <li class="nav-item">
               <a href="car.html" class="nav-link">Araçlar</a>
             </li>
-            <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
             <li class="nav-item">
               <a href="contact.html" class="nav-link">İletişim</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- END nav -->
 
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/safaturlogo.png" alt="Logo" class="navbar-logo">
+      </div>
+      <button class="navbar-toggle" id="navbar-toggle">
+        ☰
+      </button>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li class="dropdown">
+          <a href="#">Hizmetler</a>
+          <ul class="dropdown-content">
+              <li><a href="transference.html">Transfer</a></li>
+              <li><a href="services.html">Rent a Car</a></li>
+          </ul>
+        </li>
+        <li><a href="car.html">Araçlar</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+      </ul>
+    </nav>
 
+  
+  
+  
     <!-- arka plan ulus anıtının ve içerisindeki yazının olduğu kısım -->
     <div
       class="hero-wrap ftco-degree-bg"
@@ -101,28 +123,22 @@
         background-position: center 100%;
       "
       data-stellar-background-ratio="0.5"
-      >
+    >
       <div class="container">
         <div
           class="row no-gutters slider-text justify-content-start align-items-center justify-content-center"
         >
           <div class="col-lg-8 ftco-animate">
             <div class="text w-100 text-center mb-md-5 pb-md-5">
-              <h1 class="mb-4" style="color: #06069b;">
+              <h1 class="mb-4" style="color: #06069b">
                 Güvenli Ve Konforlu Araç Kiralamak İçin Tercihin
               </h1>
-              
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- burası da ulus anıtı ve içerisindeki yazının  bittiği yer -->
-
-
-
-
-
 
     <!-- <section class="ftco-section ftco-no-pt bg-light">
     	<div class="container">
@@ -196,8 +212,6 @@
   		</div>
     </section> -->
 
-
-
     <!-- BURASI ESKİ KODUM -->
     <!-- <section class="fotolar">
       <div class="galeri">
@@ -216,61 +230,129 @@
     </section> -->
     <!-- BURAYA KADAR ESKİ KODUM  SÜRÜYOR -->
 
-    <section class="fotolar">
+    <!-- <section class="fotolar">
       <div class="galeri">
-        <div class="photo" style="background-image: url('images/insta_foto/1.png')" onclick="openModal(this)"></div>
-        <div class="photo" style="background-image: url('images/insta_foto/2.png')" onclick="openModal(this)"></div>
-        <div class="photo" style="background-image: url('images/insta_foto/3.png')" onclick="openModal(this)"></div>
+        <div
+          class="photo"
+          style="background-image: url('images/insta_foto/1.png')"
+          onclick="openModal(this)"
+        ></div>
+        <div
+          class="photo"
+          style="background-image: url('images/insta_foto/2.png')"
+          onclick="openModal(this)"
+        ></div>
+        <div
+          class="photo"
+          style="background-image: url('images/insta_foto/3.png')"
+          onclick="openModal(this)"
+        ></div>
       </div>
     </section>
-    
+
     <section class="fotolar">
       <div class="galeri">
-        <div class="photo" style="background-image: url('images/insta_foto/4.png')" onclick="openModal(this)"></div>
-        <div class="photo" style="background-image: url('images/insta_foto/5.png')" onclick="openModal(this)"></div>
-        <div class="photo" style="background-image: url('images/insta_foto/6.png')" onclick="openModal(this)"></div>
+        <div
+          class="photo"
+          style="background-image: url('images/insta_foto/4.png')"
+          onclick="openModal(this)"
+        ></div>
+        <div
+          class="photo"
+          style="background-image: url('images/insta_foto/5.png')"
+          onclick="openModal(this)"
+        ></div>
+        <div
+          class="photo"
+          style="background-image: url('images/insta_foto/6.png')"
+          onclick="openModal(this)"
+        ></div>
       </div>
-    </section>
-    
+    </section> -->
+
+    <div class="slayt-container">
+      <img src="images/insta_foto/1.png" class="slayt" alt="Resim 1">
+      <img src="images/insta_foto/2.png" class="slayt" alt="Resim 2">
+      <img src="images/insta_foto/3.png" class="slayt" alt="Resim 3">
+      <img src="images/insta_foto/4.png" class="slayt" alt="Resim 1">
+      <img src="images/insta_foto/5.png" class="slayt" alt="Resim 2">
+      <img src="images/insta_foto/6.png" class="slayt" alt="Resim 3">
+  </div>
+
+
     <!-- Modal -->
     <div id="myModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
       <img class="modal-content" id="imgModal" />
     </div>
-    
 
     <div class="container mt-4">
       <div class="row">
-          <div class="col-md-4 mb-3 custom-margin">
-              <img src="images/cars/alfa romeo giulia veloce.webp" class="img-fluid" alt="Fotoğraf 1">
-          </div>
-          <div class="col-md-4 mb-3 custom-margin">
-              <img src="images/cars/fiat doblo comi easy.webp" class="img-fluid" alt="Fotoğraf 2">
-          </div>
-          <div class="col-md-4 mb-3 custom-margin">
-              <img src="images/cars/fiat egea easy.webp" class="img-fluid" alt="Fotoğraf 3">
-          </div>
-          <div class="col-md-4 mb-3 custom-margin">
-              <img src="images/cars/fiat professional ducato city.webp" class="img-fluid" alt="Fotoğraf 4">
-          </div>
-          <div class="col-md-4 mb-3 custom-margin">
-              <img src="images/cars/fiorino combi pop.png" class="img-fluid" alt="Fotoğraf 5">
-          </div>
-          <div class="col-md-4 mb-3 custom-margin">
-              <img src="images/cars/Ford Puma ST-Line.webp" class="img-fluid" alt="Fotoğraf 6">
-          </div>
-          <div class="col-md-4 mb-3 custom-margin">
-              <img src="images/cars/ford-focus-active.webp" class="img-fluid" alt="Fotoğraf 7">
-          </div>
-          <div class="col-md-4 mb-3 custom-margin">
-              <img src="images/cars/jeep wrangler rubicon.webp" class="img-fluid" alt="Fotoğraf 8">
-          </div>
-          <div class="col-md-4 mb-3 custom-margin">
-              <img src="images/cars/volvo s60 plus.png" class="img-fluid" alt="Fotoğraf 9">
-          </div>
+        <div class="col-md-4 mb-3 custom-margin">
+          <img
+            src="images/cars/alfa romeo giulia veloce.webp"
+            class="img-fluid"
+            alt="Fotoğraf 1"
+          />
+        </div>
+        <div class="col-md-4 mb-3 custom-margin">
+          <img
+            src="images/cars/fiat doblo comi easy.webp"
+            class="img-fluid"
+            alt="Fotoğraf 2"
+          />
+        </div>
+        <div class="col-md-4 mb-3 custom-margin">
+          <img
+            src="images/cars/fiat egea easy.webp"
+            class="img-fluid"
+            alt="Fotoğraf 3"
+          />
+        </div>
+        <div class="col-md-4 mb-3 custom-margin">
+          <img
+            src="images/cars/fiat professional ducato city.webp"
+            class="img-fluid"
+            alt="Fotoğraf 4"
+          />
+        </div>
+        <div class="col-md-4 mb-3 custom-margin">
+          <img
+            src="images/cars/fiorino combi pop.png"
+            class="img-fluid"
+            alt="Fotoğraf 5"
+          />
+        </div>
+        <div class="col-md-4 mb-3 custom-margin">
+          <img
+            src="images/cars/Ford Puma ST-Line.webp"
+            class="img-fluid"
+            alt="Fotoğraf 6"
+          />
+        </div>
+        <div class="col-md-4 mb-3 custom-margin">
+          <img
+            src="images/cars/ford-focus-active.webp"
+            class="img-fluid"
+            alt="Fotoğraf 7"
+          />
+        </div>
+        <div class="col-md-4 mb-3 custom-margin">
+          <img
+            src="images/cars/jeep wrangler rubicon.webp"
+            class="img-fluid"
+            alt="Fotoğraf 8"
+          />
+        </div>
+        <div class="col-md-4 mb-3 custom-margin">
+          <img
+            src="images/cars/volvo s60 plus.png"
+            class="img-fluid"
+            alt="Fotoğraf 9"
+          />
+        </div>
       </div>
-  </div>
-    
+    </div>
 
     <!-- <section class="ftco-section ftco-no-pt bg-light">
     	<div class="container">
@@ -710,7 +792,8 @@
                     ><span class="text">0505 056 9967</span>
                   </li>
                   <li>
-                    <a href="mailto:safatugkann@gmail.com?subject=İletişim Formu"
+                    <a
+                      href="mailto:safatugkann@gmail.com?subject=İletişim Formu"
                       ><span class="icon icon-envelope"></span
                       ><span class="text">safatugkann@gmail.com</span></a
                     >

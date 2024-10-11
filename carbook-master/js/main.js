@@ -367,4 +367,36 @@ function openModal(element) {
 	document.body.classList.remove("modal-open");
   }
   
+  /*navbar*/ 
+
+  document.getElementById("navbar-toggle").addEventListener("click", function() {
+	var menu = document.getElementById("navbar-menu");
+	if (menu.style.display === "none") {
+	  menu.style.display = "block";
+	  menu.style.zIndex = 999;
+	} else {
+	  menu.style.display = "none";
+	}
+  });
   
+
+/* slayttt*/
+
+let slaytIndex = 0;
+const slaytlar = document.querySelectorAll('.slayt');
+
+function gosterSlayt() {
+    slaytlar.forEach((slayt) => {
+        slayt.style.display = 'none'; // Tüm slaytları gizle
+    });
+    slaytIndex++;
+    if (slaytIndex >= slaytlar.length) {
+        slaytIndex = 0; // İlk slayta geri dön
+    }
+    slaytlar[slaytIndex].style.display = 'block'; // Aktif slaytı göster
+}
+
+// İlk slaytı göster
+gosterSlayt();
+setInterval(gosterSlayt, 3000); // Her 3 saniyede bir slayt değiştir
+
